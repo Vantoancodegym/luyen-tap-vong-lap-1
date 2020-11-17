@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<button type="button", onclick="play()">choi</button>
+<script>
+    function play(){
+    for (let i=1;i<=3; i++){
+        let a = prompt("nhap khoang ban muon chon tu");
+        let b = prompt("nhap khoang ban muon chon den");
+        let c = prompt("nhap so ban doan");
+        let r = parseInt(Math.random()*(b-a)+a);
+        if (c == r){
+            alert("ban doan dung");
+        }else {
+            alert("ban doan sai");
+        }
+    }
+    }
+</script>
+</body>
+</html>
